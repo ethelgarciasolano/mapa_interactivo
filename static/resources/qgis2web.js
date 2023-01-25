@@ -1,6 +1,5 @@
 
 
-var map_wrapper = document.getElementById('map_wrapper');
 
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
@@ -8,10 +7,28 @@ var closer = document.getElementById('popup-closer');
 var sketch;
 
 
-document.getElementById("conflicto").onchange = function(map){
-
-
-  }
+document.getElementById("conflicto").onchange = function(element){
+    var selVal  = document.getElementById("conflicto").value
+    console.log('selVal')
+    console.log(selVal)
+switch (selVal) {
+    case "OpenStreet":
+        var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+             attributions: ' ',
+                url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+            });
+            break;
+    case "Google":
+                    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+                        attributions: ' ',
+                            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+                        });
+                        break;
+                    }
+        l=map.getLayers().getArray()[0];
+        l.setSource(lyr_OpenStreetMap_0);
+  
+ };
 
 closer.onclick = function() {
     container.style.display = 'none';
