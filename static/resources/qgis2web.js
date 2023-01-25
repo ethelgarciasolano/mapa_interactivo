@@ -24,7 +24,22 @@ switch (selVal) {
                             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
                         });
                         break;
-  
+
+case "Open":
+    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+        attributions: ' ',
+            url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=TekgzTaxuD0y03oplKCg'
+        });
+        break;
+
+        case "Noche":
+    var lyr_OpenStreetMap_0 = new ol.source.XYZ({
+        attributions: ' ',
+            url: 'https://api.maptiler.com/maps/toner-v2/{z}/{x}/{y}.png?key=TekgzTaxuD0y03oplKCg'
+        });
+        break;
+
+
 
                             }
         l=map.getLayers().getArray()[0];
