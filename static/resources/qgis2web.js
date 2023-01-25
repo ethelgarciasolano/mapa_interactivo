@@ -8,7 +8,7 @@ var sketch;
 
 function onchangeDiurno(e) {
     if (e.currentTarget.value === 'Diurno') {
-        window.location.href = 'http://127.0.0.1:5000/';
+        window.location.href = 'https://mapa-interactivo.onrender.com';
     }
 }
 
@@ -16,7 +16,7 @@ document.getElementById("tipomapaNocturno").addEventListener('change', onchangeD
 
 function onchangeNocturno(e) {
     if (e.currentTarget.value === 'Nocturno') {
-        window.location.href = 'http://127.0.0.1:5000/nocturno';
+        window.location.href = 'https://mapa-interactivo.onrender.com/nocturno';
     }
 }
 
