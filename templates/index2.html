@@ -41,27 +41,25 @@
         </div>
        
         <div id="map_wrapper">
-          
-          <label for="conflicto">  __Selecciona los datos: </label>
+          <div style='padding-left: 2%;'>
+          <label for="conflicto">  __Selecciona fondo: </label>
           <select name="pets" id="conflicto">
             <option value="Google">Google</option>
             <option value="OpenStreet">OpenStreet</option>
-            <option value="Open">Open</option>
-            <option value="Noche">Noche</option>
+            <option value="Open">Montaña</option>
+            <option value="Noche">Linea</option>
           </select>
           <button type="button" id="centrar">Centrar</button>
-          
-          <div id="map">
-      
+        </div>
+          <div id="map" style='width: 95%; margin: 0 auto;'>
               <div id="popup" class="ol-popup">
                   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                   <div id="popup-content"></div>
               </div>
           </div>
 
-          
-
         </div>
+
         <script src={{ url_for('static', filename='resources/qgis2web_expressions.js') }}></script>
         <script src={{ url_for('static', filename='resources/polyfills.js') }}></script>
         <script src={{ url_for('static', filename='resources/functions.js') }}></script>
