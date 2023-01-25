@@ -212,6 +212,7 @@ var LayerSwitcher = function (_Control) {
     }, {
         key: 'hidePanel',
         value: function hidePanel() {
+           
             if (this.element.classList.contains(this.shownClassName)) {
                 this.element.classList.remove(this.shownClassName);
             }
@@ -385,18 +386,22 @@ var LayerSwitcher = function (_Control) {
 
     }, {
         key: 'setVisible_',
+       
         value: function setVisible_(map, lyr, visible, groupSelectStyle) {
+       
             // console.log(lyr.get('title'), visible, groupSelectStyle);
             lyr.setVisible(visible);
             if (visible && lyr.get('type') === 'base') {
                 // Hide all other base layers regardless of grouping
                 LayerSwitcher.forEachRecursive(map, function (l, idx, a) {
+                 
                     if (l != lyr && l.get('type') === 'base') {
                         l.setVisible(false);
                     }
                 });
             }
             if (lyr.getLayers && !lyr.get('combine') && groupSelectStyle === 'children') {
+              
                 lyr.getLayers().forEach(function (l) {
                     LayerSwitcher.setVisible_(map, l, lyr.getVisible(), groupSelectStyle);
                 });

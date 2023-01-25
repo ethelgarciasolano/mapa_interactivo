@@ -6,7 +6,14 @@ var placement = 'point';
                         placement) {
                     switch(value) {
                      
-            
+        case 0:
+                            return [ new ol.style.Style({
+                stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.07450980392156863)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgb(254,200,2,1.0)'}),
+                text: createTextStyle(feature, resolution, labelText, labelFont,
+                                        labelFill, placement, bufferColor,
+                                        bufferWidth)
+            })];
+            break;
         case 3:
                             return [ new ol.style.Style({
                 stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.07450980392156863)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}),fill: new ol.style.Fill({color: 'rgb(255,161,1,1.0)'}),

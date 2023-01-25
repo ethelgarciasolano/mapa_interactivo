@@ -42,6 +42,7 @@ var SearchLayer = (function (Control) {
 
   var button = document.createElement('button');
   var toogleHideShowInput = function() {
+   
     var input = document.querySelector('form > .search-layer-input-search');
     if (hasClass(input, 'search-layer-collapsed')) {
       removeClass(input, 'search-layer-collapsed');

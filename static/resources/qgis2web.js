@@ -85,7 +85,7 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
-layerSwitcher.hidePanel = function() {};
+layerSwitcher.hidePanel = function() { };
 layerSwitcher.showPanel();
 
 
@@ -201,6 +201,7 @@ var onPointerMove = function(evt) {
                 }
             }
         } else {
+            
             currentFeatureKeys = currentFeature.getKeys();
             if (doPopup) {
                 popupText += '<li><table>';
@@ -236,6 +237,7 @@ var onPointerMove = function(evt) {
     }
 
     if (doHighlight) {
+        
         if (currentFeature !== highlight) {
             if (highlight) {
                 featureOverlay.getSource().removeFeature(highlight);
@@ -318,6 +320,7 @@ var onSingleClick = function(evt) {
             clusteredFeatures = feature.get("features");
             var clusterFeature;
             if (typeof clusteredFeatures !== "undefined") {
+            
                 if (doPopup) {
                     for(var n=0; n<clusteredFeatures.slice(0,1); n++) {
                         clusterFeature = clusteredFeatures[n];
@@ -346,6 +349,7 @@ var onSingleClick = function(evt) {
                     }
                 }
             } else {
+               
                 currentFeatureKeys = currentFeature.getKeys();
                 if (doPopup) {
                     popupText += '<li><table>';
@@ -410,6 +414,7 @@ map.on('pointermove', function(evt) {
     onPointerMove(evt);
 });
 map.on('singleclick', function(evt) {
+   
     onSingleClick(evt);
 });
 

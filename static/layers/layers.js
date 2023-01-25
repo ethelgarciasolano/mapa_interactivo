@@ -42,7 +42,7 @@ var wms_layers = [];
                                 style: style_Final_3,
                                 interactive: true,
                 
-                                title: "<img src='./static/img/Final_1_0.png'> 0-3<br <br />"
+                                title: "<img src='./static/img/Final_1_0.png'> 0-3 dB(A)<br <br />"
                         });
 
 
@@ -52,7 +52,7 @@ var wms_layers = [];
                                 style: style_Final_4,
                                 interactive: true,
                 
-                                title: "<img src='./static/img/Final_1_1.png'> 3-6<br <br />"
+                                title: "<img src='./static/img/Final_1_1.png'> 3-6 dB(A)<br <br />"
                         });
                 
                 var lyr_Final_5 = new ol.layer.Vector({
@@ -61,7 +61,7 @@ var wms_layers = [];
                             style: style_Final_5,
                             interactive: true,
             
-                            title: "<img src='./static/img/Final_1_2.png'> 6-9<br <br />"
+                            title: "<img src='./static/img/Final_1_2.png'> 6-9 dB(A)<br <br />"
                     });
             
                 var lyr_Final_6 = new ol.layer.Vector({
@@ -70,7 +70,7 @@ var wms_layers = [];
                         style: style_Final_6,
                         interactive: true,
         
-                        title: "<img src='./static/img/Final_1_3.png'> 9-12<br <br />"
+                        title: "<img src='./static/img/Final_1_3.png'> 9-12 dB(A)<br <br />"
                 });
             
                       
@@ -80,7 +80,7 @@ var wms_layers = [];
                     style: style_Final_7,
                     interactive: true,
     
-                    title: "<img src='./static/img/Final_1_4.png'> 12-15<br <br />"
+                    title: "<img src='./static/img/Final_1_4.png'> 12-15 dB(A)<br <br />"
             });
 
             var lyr_Final_8 = new ol.layer.Vector({
@@ -89,7 +89,7 @@ var wms_layers = [];
                 style: style_Final_8,
                 interactive: true,
 
-                title: "<img src='./static/img/Final_1_5.png'> 15-18<br <br />"
+                title: "<img src='./static/img/Final_1_5.png'> 15-18 dB(A)<br <br />"
         });
 
 
@@ -99,7 +99,7 @@ var wms_layers = [];
             style: style_Final_9,
             interactive: true,
 
-            title: "<img src='./static/img/Final_1_6.png'> 18-21<br <br />"
+            title: "<img src='./static/img/Final_1_6.png'> 18-21 dB(A)<br <br />"
     });
 
     var lyr_Final_10 = new ol.layer.Vector({
@@ -108,7 +108,7 @@ var wms_layers = [];
         style: style_Final_10,
         interactive: true,
 
-        title: "<img src='./static/img/Final_1_7.png'> 21-24<br <br />"
+        title: "<img src='./static/img/Final_1_7.png'> 21-24 dB(A)<br <br />"
 });
 var lyr_Final_11 = new ol.layer.Vector({
     declutter: true,
@@ -116,7 +116,7 @@ var lyr_Final_11 = new ol.layer.Vector({
     style: style_Final_11,
     interactive: true,
 
-    title: "<img src='./static/img/Final_1_8.png'> 24-27<br <br />"
+    title: "<img src='./static/img/Final_1_8.png'> 24-27 dB(A)<br <br />"
 });
 
 var lyr_Final_12 = new ol.layer.Vector({
