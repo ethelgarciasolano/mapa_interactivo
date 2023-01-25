@@ -12,6 +12,7 @@
         <link rel="stylesheet" href={{ url_for('static', filename='resources/fontawesome-all.min.css') }}>
         <link rel="stylesheet" href={{ url_for('static', filename='resources/ol-layerswitcher.css') }}>
         <link rel="stylesheet" href={{ url_for('static', filename='resources/qgis2web.css') }}>
+        <link rel="stylesheet" href={{ url_for('static', filename='resources/loading.css') }}>
   
         <title></title>
     </head>
@@ -23,7 +24,7 @@
         <div id="loading" > </div>
             <div id="map_wrapper" >
                       <div style='padding-left: 2%;'>
-                              <label for="conflicto">  __Selecciona fondo: </label>
+                              <label for="conflicto"> Selecciona fondo: </label>
                               <select name="pets" id="conflicto">
                                 <option value="Google">Google</option>
                                 <option value="OpenStreet">OpenStreet</option>
@@ -31,18 +32,20 @@
                                 <option value="Noche">Linea</option>
                               </select>
                               <button type="button" id="centrar">Centrar</button>
-                       
-                                    <label for="tipomapa">  __Selecciona Datos: </label>
-                                    <select id="tipomapaNocturno" >
-                                      <option value='Nocturno'>Conflicto Nocturno</option>
-                                      <option value='Diurno'>Conflicto Diurno</option>
-                                    </select>
-                                    <select id="tipomapaDiurno" style='display: none;'>
-                                    </select>
+                              <form class="form-inline" method="POST" action="{{ url_for('mapainteractivo') }}">
+                                    <label for="tipomapa">  Selecciona Datos: </label>
+                                      <select name="tipomapa" id="tipomapaNocturno" >
+                                        <option value='Nocturno'>Conflicto Nocturno</option>
+                                        <option value='Diurno'>Conflicto Diurno</option>
+                                      </select>
+                                      <select id="tipomapaDiurno" style='display: none;'>
+                                      </select>
+                                    <button type="submit" class="btn btn-default">Actualizar</button>
+                              </form>
                                     
 
                      </div>
-                      <div id="map" style='width: 95%; margin: 0 auto;'>
+                      <div id="map" style='width: 95%; margin: auto;'>
                           <div id="popup" class="ol-popup">
                               <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                               <div id="popup-content"></div>

@@ -6,21 +6,7 @@ var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
 var sketch;
 
-function onchangeDiurno(e) {
-    if (e.currentTarget.value === 'Diurno') {
-        window.location.href = 'https://mapa-interactivo.onrender.com';
-    }
-}
 
-document.getElementById("tipomapaNocturno").addEventListener('change', onchangeDiurno);
-
-function onchangeNocturno(e) {
-    if (e.currentTarget.value === 'Nocturno') {
-        window.location.href = 'https://mapa-interactivo.onrender.com/nocturno';
-    }
-}
-
-document.getElementById("tipomapaDiurno").addEventListener('change', onchangeNocturno);
 
 document.getElementById("conflicto").onchange = function(element){
     var selVal  = document.getElementById("conflicto").value
