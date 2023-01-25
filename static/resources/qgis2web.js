@@ -6,6 +6,21 @@ var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
 var sketch;
 
+function onchangeDiurno(e) {
+    if (e.currentTarget.value === 'Diurno') {
+        window.location.href = 'http://127.0.0.1:5000/';
+    }
+}
+
+document.getElementById("tipomapaNocturno").addEventListener('change', onchangeDiurno);
+
+function onchangeNocturno(e) {
+    if (e.currentTarget.value === 'Nocturno') {
+        window.location.href = 'http://127.0.0.1:5000/nocturno';
+    }
+}
+
+document.getElementById("tipomapaDiurno").addEventListener('change', onchangeNocturno);
 
 document.getElementById("conflicto").onchange = function(element){
     var selVal  = document.getElementById("conflicto").value
