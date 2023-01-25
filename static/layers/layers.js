@@ -125,7 +125,7 @@ var lyr_Final_12 = new ol.layer.Vector({
     style: style_Final_12,
     interactive: true,
 
-    title: "<img src='./static/img/Final_1_9.png'> 27-30<br <br />"
+    title: "<img src='./static/img/Final_1_9.png'> 27-30 dB(A)<br <br />"
 });
 
 
