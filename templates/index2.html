@@ -46,8 +46,10 @@
           <select name="pets" id="conflicto">
             <option value="Google">Google</option>
             <option value="OpenStreet">OpenStreet</option>
+         
           </select>
-
+          <button type="button" id="centrar">Centrar</button>
+          
           <div id="map">
       
               <div id="popup" class="ol-popup">
@@ -55,6 +57,9 @@
                   <div id="popup-content"></div>
               </div>
           </div>
+
+          
+
         </div>
         <script src={{ url_for('static', filename='resources/qgis2web_expressions.js') }}></script>
         <script src={{ url_for('static', filename='resources/polyfills.js') }}></script>

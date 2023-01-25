@@ -24,11 +24,19 @@ switch (selVal) {
                             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
                         });
                         break;
-                    }
+  
+
+                            }
         l=map.getLayers().getArray()[0];
         l.setSource(lyr_OpenStreetMap_0);
   
  };
+
+ document.getElementById("centrar").onclick = function(element){
+    map.getView().setCenter(ol.proj.transform([-74.923027, 10.632190], 'EPSG:4326', 'EPSG:3857'))
+
+
+ }
 
 closer.onclick = function() {
     container.style.display = 'none';
