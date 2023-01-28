@@ -14,15 +14,19 @@ app.title = 'MAPA INTERACTIVO'
 def mapainteractivo():
     try:
         select = request.form.get('tipomapa')
-        if select=='Diurno':
-            return render_template( 'index.html')
+        if select=='Dia':
+            return render_template( 'Diurno.html')
         elif select=='Nocturno':
             return render_template( 'index2.html')
-        else: 
+        elif select=='Diurno':
             return render_template( 'index.html')
+        elif select=='Noche':
+            return render_template( 'Nocturno.html')
+        else: 
+            return render_template( 'Diurno.html')
     except Exception as ex:
-        print(ex)
-        return render_template( 'index.html')
+      
+        return render_template( 'Diurno.html')
 
 
 

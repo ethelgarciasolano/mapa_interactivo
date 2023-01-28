@@ -10,8 +10,7 @@ var sketch;
 
 document.getElementById("conflicto").onchange = function(element){
     var selVal  = document.getElementById("conflicto").value
-    console.log('selVal')
-    console.log(selVal)
+ 
 switch (selVal) {
     case "OpenStreet":
         var lyr_OpenStreetMap_0 = new ol.source.XYZ({
