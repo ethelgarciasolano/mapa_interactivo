@@ -78,7 +78,7 @@ var map = new ol.Map({
     layers: layersList,
     view: new ol.View({maxNativeZoom: 14,
         zoom:14,
-         maxZoom: 20, minZoom: 14
+         maxZoom: 20, minZoom: 13.5
     })
 });
 

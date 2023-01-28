@@ -196,7 +196,7 @@ lyr_Final_12.set('fieldLabels', {'OBJECTID':'inline label','Conflict_d': 'inline
                         style: style_Final_3,
                         interactive: true,
         
-                        title: "<img src='./static/img/Final_1_0.png'> 35-40 dB(A)<br <br />"
+                        title: "<img src='./static/img/Final_1_0R.png'> 35-40 dB(A)<br <br />"
                 });
 
 
@@ -206,7 +206,7 @@ lyr_Final_12.set('fieldLabels', {'OBJECTID':'inline label','Conflict_d': 'inline
                         style: style_Final_4,
                         interactive: true,
         
-                        title: "<img src='./static/img/Final_1_1.png'> 40-45 dB(A)<br <br />"
+                        title: "<img src='./static/img/Final_1_1R.png'> 40-45 dB(A)<br <br />"
                 });
         
         var lyr_Final_5 = new ol.layer.Vector({
@@ -215,7 +215,7 @@ lyr_Final_12.set('fieldLabels', {'OBJECTID':'inline label','Conflict_d': 'inline
                     style: style_Final_5,
                     interactive: true,
     
-                    title: "<img src='./static/img/Final_1_2.png'> 45-50 dB(A)<br <br />"
+                    title: "<img src='./static/img/Final_1_2R.png'> 45-50 dB(A)<br <br />"
             });
     
         var lyr_Final_6 = new ol.layer.Vector({
@@ -224,7 +224,7 @@ lyr_Final_12.set('fieldLabels', {'OBJECTID':'inline label','Conflict_d': 'inline
                 style: style_Final_6,
                 interactive: true,
 
-                title: "<img src='./static/img/Final_1_3.png'> 50-55 dB(A)<br <br />"
+                title: "<img src='./static/img/Final_1_3R.png'> 50-55 dB(A)<br <br />"
         });
     
               
@@ -234,7 +234,7 @@ lyr_Final_12.set('fieldLabels', {'OBJECTID':'inline label','Conflict_d': 'inline
             style: style_Final_7,
             interactive: true,
 
-            title: "<img src='./static/img/Final_1_4.png'> 55-60 dB(A)<br <br />"
+            title: "<img src='./static/img/Final_1_4R.png'> 55-60 dB(A)<br <br />"
     });
 
     var lyr_Final_8 = new ol.layer.Vector({
@@ -243,7 +243,7 @@ lyr_Final_12.set('fieldLabels', {'OBJECTID':'inline label','Conflict_d': 'inline
         style: style_Final_8,
         interactive: true,
 
-        title: "<img src='./static/img/Final_1_5.png'> 60-65 dB(A)<br <br />"
+        title: "<img src='./static/img/Final_1_5R.png'> 60-65 dB(A)<br <br />"
 });
 
 
@@ -253,7 +253,7 @@ var lyr_Final_9 = new ol.layer.Vector({
     style: style_Final_9,
     interactive: true,
 
-    title: "<img src='./static/img/Final_1_6.png'> 65-70 dB(A)<br <br />"
+    title: "<img src='./static/img/Final_1_6R.png'> 65-70 dB(A)<br <br />"
 });
 
 var lyr_Final_10 = new ol.layer.Vector({
@@ -262,7 +262,7 @@ source:jsonSource_Final_2,
 style: style_Final_10,
 interactive: true,
 
-title: "<img src='./static/img/Final_1_7.png'> 70-75 dB(A)<br <br />"
+title: "<img src='./static/img/Final_1_7R.png'> 70-75 dB(A)<br <br />"
 });
 var lyr_Final_11 = new ol.layer.Vector({
 declutter: true,
@@ -270,7 +270,7 @@ source:jsonSource_Final_2,
 style: style_Final_11,
 interactive: true,
 
-title: "<img src='./static/img/Final_1_8.png'> 75-80 dB(A)<br <br />"
+title: "<img src='./static/img/Final_1_8R.png'> 75-80 dB(A)<br <br />"
 });
 
 var lyr_Final_12 = new ol.layer.Vector({
@@ -279,7 +279,7 @@ source:jsonSource_Final_2,
 style: style_Final_12,
 interactive: true,
 
-title: "<img src='./static/img/Final_1_9.png'> >80 dB(A)<br <br />"
+title: "<img src='./static/img/Final_1_9R.png'> >80 dB(A)<br <br />"
 });
 
 
